@@ -1,0 +1,46 @@
+Source: statusengine
+Section: net
+Priority: optional
+Maintainer: Daniel Ziegler <daniel@statusengine.org>
+Build-Depends: debhelper (>= 8.0.0), libgearman-dev, uuid-dev, libjson-c-dev
+Standards-Version: 3.9.5
+Homepage: http://statusengine.org
+
+Package: statusengine-module
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, gearman-job-server
+Description: the missing event broker
+ Statusengine is an event broker module for Naemon. This event handler provides
+ you an easy to use interface, to process Naemon events with your own
+ application.
+ .
+ By default Statusengine stores all data in a MySQL database.
+ .
+ * Modern code design (based on CakePHP)
+ * Load balancing to multiple hosts
+ * No strange kernel parameters
+ * Full UTF-8 support
+ * Legacy mode (tell me more)
+ * Small C, big PHP parts
+ .
+ This package contains the Nagios/Naemon event broker module.
+
+Package: statusengine-app
+Architecture: all
+Depends: ${misc:Depends}, gearman-job-server, gearman-tools, php5-gearman,
+ php5-cli
+Description: the missing event broker (cakePHP App)
+ Statusengine is an event broker module for Naemon. This event handler provides
+ you an easy to use interface, to process Naemon events with your own
+ application.
+ .
+ By default Statusengine stores all data in a MySQL database.
+ .
+ * Modern code design (based on CakePHP)
+ * Load balancing to multiple hosts
+ * No strange kernel parameters
+ * Full UTF-8 support
+ * Legacy mode (tell me more)
+ * Small C, big PHP parts
+ .
+ This package contains the CakePHP application.
