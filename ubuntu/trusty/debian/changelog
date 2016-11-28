@@ -1,0 +1,5 @@
+statusengine (2.0.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Daniel Ziegler <daniel@statusengine.org>  Mon, 28 Nov 2016 19:35:40 +0100

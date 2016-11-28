@@ -1,0 +1,18 @@
+cakephp/app/Config		/usr/share/statusengine/app
+cakephp/app/Console		/usr/share/statusengine/app
+cakephp/app/Controller		/usr/share/statusengine/app
+cakephp/app/Lib			/usr/share/statusengine/app
+cakephp/app/Locale		/usr/share/statusengine/app
+cakephp/app/Model		/usr/share/statusengine/app
+cakephp/app/Plugin		/usr/share/statusengine/app
+cakephp/app/Test		/usr/share/statusengine/app
+cakephp/app/Vendor		/usr/share/statusengine/app
+cakephp/app/View		/usr/share/statusengine/app
+cakephp/app/src			/usr/share/statusengine/app
+cakephp/app/webroot		/usr/share/statusengine/app
+cakephp/app/.htaccess		/usr/share/statusengine/app
+cakephp/app/composer.json	/usr/share/statusengine/app
+cakephp/app/index.php		/usr/share/statusengine/app
+cakephp/app/Config		/etc/statusengine
+cakephp/lib 			/usr/share/statusengine
+
