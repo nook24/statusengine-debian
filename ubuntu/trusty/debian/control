@@ -2,7 +2,7 @@ Source: statusengine
 Section: net
 Priority: optional
 Maintainer: Daniel Ziegler <daniel@statusengine.org>
-Build-Depends: debhelper (>= 8.0.0), libgearman-dev uuid-dev  php5-dev libjson-c-dev manpages-dev build-essential libglib2.0-dev
+Build-Depends: debhelper (>= 8.0.0), libgearman-dev, uuid-dev, php5-dev, libjson-c-dev, manpages-dev, build-essential, libglib2.0-dev
 Standards-Version: 3.9.4
 Homepage: https://statusengine.org/
 #Vcs-Git: https://github.com/nook24/statusengine.git
@@ -10,7 +10,7 @@ Homepage: https://statusengine.org/
 
 Package: statusengine
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, php5-cli php5-gearman
+Depends: ${shlibs:Depends}, ${misc:Depends}, php5-cli, php5-gearman
 Description: Statusengine save Nagios/Naemon event data to a MySQL database
  <insert long description, indented with spaces>
 
@@ -18,7 +18,7 @@ Description: Statusengine save Nagios/Naemon event data to a MySQL database
 Package: statusengine-module
 Architecture: all
 Depends: ${misc:Depends},
- gearman-job-server libjson-c-dev libglib2.0-dev
+ gearman-job-server, libjson-c-dev, libglib2.0-dev
 Recommends: mysql-client
 Description: Statusengine Event Broker Module for Nagios/Naemon
  <insert long description, indented with spaces>

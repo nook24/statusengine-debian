@@ -4,5 +4,13 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+override_dh_auto_clean:
+	rm -rf statusengine/src/bin/
+	dh_auto_clean
+
+override_dh_auto_build:
+	$(MAKE) all
+
 %:
-	dh $@ 
+	dh $@
+

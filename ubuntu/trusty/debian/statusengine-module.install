@@ -1,4 +1,3 @@
-statusengine-naemon-1.0.3.o /usr/lib/statusengine
-statusengine-naemon-1.0.5.o /usr/lib/statusengine
-statusengine-nagios.o /usr/lib/statusengine
+statusengine/src/bin/naemon/statusengine.o /usr/lib/statusengine/statusengine-naemon-1.0.3.o
+statusengine/src/bin/nagios/statusengine.o /usr/lib/statusengine-nagios4.o
 
